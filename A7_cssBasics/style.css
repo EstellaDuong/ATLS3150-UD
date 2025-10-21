@@ -1,0 +1,78 @@
+body {
+    background-color: white;
+    color: #333333;
+    /* font:
+      1em / 1.4 "Helvetica Neue",
+      "Helvetica",
+      "Arial",
+      sans-serif; */
+    font: 1em / 1.4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3em 10em;
+    margin: 0;
+    margin-bottom: 5em;
+}
+  
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: rgb(205, 78, 99);
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+    margin: 0;
+    color: rgb(220, 143, 0);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  p {
+    color: rgb(49, 44, 49);
+    margin: 0.5em 0;
+  }
+  
+  ol {
+    border: 2px dotted orange;
+  }
+  
+  ul {
+    border: 2px dotted orange;
+    margin: auto;
+  }
+  
+  ol,
+  ul {
+    padding: 5px 20px;
+    border-radius: 4px;
+  }
+  
+
+ dl {
+    color: gray;
+    margin: 0.5em 0;
+  }
+  
+  dt {
+    font-weight: bold;
+    color: rgb(220, 143, 0);
+  }
+  
+p strong {
+  color: rgb(205, 78, 99);
+} 
+
+p,
+em {
+  margin: 0.5em 0;
+}
+
+em {
+  color: rgb(210, 105, 1);
+}
+
+hr {
+    margin: 5em 0;
+}
