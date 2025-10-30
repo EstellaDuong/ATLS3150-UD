@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    color: #222;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+/* form styling */
+
+#wrapper {
+    width: 60%;
+    margin-left: 4%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+fieldset {
+    margin-bottom: 1.5em;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+div#formcol1 {
+	float:left;	
+	width: 100%;
+}
+
+#formcol1 ul li {
+    margin-bottom: 0.8em;
+}
+
+#formcol1 li {
+	list-style:none;
+}
+
+label {
+	margin-right: .5em;
+	width: 5.6em; /* I made this deliberately wide – come up with your own
+	optimal width */
+	display: inline-block; /* width will not work for “inline” elements such as
+	“label”. Therefore we need to set it to “inline-block” */
+	text-align: right;
+}
+
+select:focus, select:active, input:focus, input:active, input:focus + label,
+input:active + label, label[for]:focus, label[for]:active {
+	outline: 3px solid #87c7ff;
+    background-color: #eef8ff !important;
+}
+
+input[type="text"],
+select {
+    padding: 6px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+
+input[type="radio"] + label {
+    margin: 0 1em;
+	cursor: pointer;
+}
+
+#multchoice label {
+	text-align: left;
+}
+
+.submit-button input[type="submit"] {
+    padding: 10px 18px;
+    font-size: 1em;
+    background-color: #004ebb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button input[type="submit"]:hover {
+    background-color: #003e95;
+}
+
+/* end of form css */
+	
