@@ -70,7 +70,7 @@ select {
 }
 
 input[type="radio"] + label {
-    margin: 0 1em;
+    padding: 0 1em;
 	cursor: pointer;
 }
 
