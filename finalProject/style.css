@@ -16,7 +16,7 @@ main {
 
 button {
     color: white;
-    background-color: #e56700;
+    background-color: #C75000;
     border-radius: 10px;
     border: none;
     padding: 1rem 1.3rem;
@@ -24,6 +24,16 @@ button {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: block;     
     margin-bottom: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+     background-color: #ad4b00;
+}
+
+button:focus,
+.badge:focus {
+    outline-offset: 3px;
 }
 
 .navbar {
@@ -224,13 +234,13 @@ a.navbar-brand {
     text-shadow: 2px 2px 6px rgba(0,0,0,0.9); 
   }
   
-  #introCarousel .carousel-caption h1 {
+  #introCarousel .carousel-caption h2 {
     font-size: clamp(1.5rem, 6vw, 5rem);
     margin: .9rem 0;
     font-weight: 600;
   }
   
-  #introCarousel .carousel-caption h2 {
+  #introCarousel .carousel-caption p {
     font-size: clamp(0.9rem, 3vw, 2rem);
   }
 
@@ -240,11 +250,13 @@ a.navbar-brand {
     transition: opacity 0.3s; 
     font-size: 4rem;
     color: white;
+    box-shadow: none;
   }
   
   /* Make arrows semi-transparent on hover */
   .carousel-control-prev:hover,
   .carousel-control-next:hover {
+    background-color: rgba(255, 255, 255, 0);
     opacity: 0.6;
   } 
   
@@ -278,7 +290,6 @@ a.navbar-brand {
   .badge {
     flex: 1 1 1%;
     background-color: #E49217;
-    color: black;
     text-align: center;
     border-radius: 5px;
     padding: 1rem;
@@ -296,13 +307,15 @@ a.navbar-brand {
   .badge-title {
     font-weight: bold;
     font-size: 1.1rem;
-    margin: 0.5rem 0;
+    margin: 0;
+    color: black;
   }
   
   .badge-subtext {
     font-size: 0.95rem;
     font-weight: normal;
     margin: 0;
+    color: black;
   }
   
   .badge-footer {
@@ -312,7 +325,7 @@ a.navbar-brand {
     padding: 10px;
     margin-top: 0.7rem;
     font-weight: bold;
-    color:#000000
+    color: black;
   }
   
   @media (max-width: 768px) {
