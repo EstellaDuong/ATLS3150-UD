@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+  
+.navbar-brand img {
+    width: 180px;
+    height: auto;
+    padding: 0;
+}
+
+a.navbar-brand {
+    padding: 0;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e56700;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.navbar .container-fluid { padding: 0 8%; }
+
+.dropdown-menu {
+    background-color: #333;
+    border: none;
+    border-radius: 0;
+}
+
+.dropdown-item {
+    color: #e5e5e5;
+    font-size: 0.92em;
+    padding: 8px 15px;
+}
+
+.dropdown-item:hover {
+    background-color: #333;
+    color: #FFB070;
+}
+
+
+/* Show dropdown on hover for desktop */
+@media (min-width: 768px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* aligns directly under link */
+    }
+}
+
+@media (max-width: 992px) {
+
+    .dropdown-menu {
+        background-color: #f8f8f8;
+        border: none;
+        border-radius: 0;
+    }
+    
+    .dropdown-item {
+        color: #4F4F4F;
+        font-size: 0.92em;
+        padding: 8px 15px;
+    }
+    
+    .dropdown-item:hover {
+        background-color: #E3E3E3;
+        color: black;
+    }
+
+    .navbar-toggler {
+        border: 0 !important;
+    }
+}
+  
+  
+  
+
+#introCarousel,
+#introCarousel .carousel-inner,
+#introCarousel .carousel-item {
+  height: 90vh;
+}
+
+#introCarousel .carousel-item {
+    position: relative; /* needed for overlay */
+  }
+  
+  #introCarousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Overlay to darken the image */
+  #introCarousel .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35); /* semi-transparent black */
+    z-index: 1;
+  }
+  
+  /* Center caption inside carousel with shadow */
+  #introCarousel .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    z-index: 2; /* above overlay */
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.9); 
+  }
+  
+  #introCarousel .carousel-caption h1 {
+    font-size: clamp(1.5rem, 6vw, 5rem);
+    margin: .9rem 0;
+  }
+  
+  #introCarousel .carousel-caption p {
+    font-size: clamp(0.9rem, 3vw, 2rem);
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 1;           
+    transition: opacity 0.3s; 
+    font-size: 4rem;
+    color: white;
+  }
+  
+  /* Make arrows semi-transparent on hover */
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    opacity: 0.6;
+  } 
+  
+.carousel-control-prev:focus .carousel-control-prev-icon,
+.carousel-control-next:focus .carousel-control-next-icon {
+  outline: 3px solid #fff;
+  border-radius: 10px;
+  outline-offset: 3px;
+}
+
