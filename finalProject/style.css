@@ -7,10 +7,21 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
+    font-family: "Raleway", Sans-serif;
 }
 
 main {
     flex: 1;
+}
+
+button {
+    color: white;
+    background-color: #e56700;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem 1.3rem;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .navbar {
@@ -35,6 +46,10 @@ a.navbar-brand {
 
 .navbar-nav .nav-item {
     margin: 0 10px;
+}
+
+.navbar-nav button {
+    box-shadow: none;
 }
 
 .navbar .container-fluid { padding: 0 8%; }
@@ -210,6 +225,7 @@ a.navbar-brand {
   #introCarousel .carousel-caption h1 {
     font-size: clamp(1.5rem, 6vw, 5rem);
     margin: .9rem 0;
+    font-weight: 600;
   }
   
   #introCarousel .carousel-caption h2 {
@@ -266,6 +282,7 @@ a.navbar-brand {
     padding: 1rem;
     max-width: 250px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-decoration: none;
   }
   
   .badge img {
@@ -296,7 +313,6 @@ a.navbar-brand {
     color:#000000
   }
   
-  /* Stack vertically on smaller screens */
   @media (max-width: 768px) {
     .about-section {
       flex-direction: column;
@@ -307,4 +323,29 @@ a.navbar-brand {
       flex: 1 1 100%;
     }
   }
+  
+
+
+  .nextGenSect {
+    background: url("images/mtnBg.jpg") center/cover no-repeat;
+    padding: 5rem clamp(0rem, 15vw, 13rem);
+  }
+
+  .nextGenSect h2 {
+    color: #4F4F4F;
+    font-size: 4rem;
+  }
+
+  .nextGenSect p {
+    color: #4F4F4F;
+    font-size: 1.2rem;
+    padding: 0.6rem 0;
+  }
+
+  @media (max-width: 504px) {
+    .nextGenSect h2 {
+        font-size: 2rem;
+    }
+  }
+
   
