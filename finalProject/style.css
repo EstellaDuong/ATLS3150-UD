@@ -1,8 +1,17 @@
 html, body {
-    margin: 0;
-    padding: 0;
     height: 100%;
-  }
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+main {
+    flex: 1;
+}
 
 .navbar {
     background-color: #fff;
@@ -79,6 +88,80 @@ a.navbar-brand {
         border: 0 !important;
     }
 }
+
+
+
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #222;
+    color: #B3B3B3;
+    padding: 2.5rem 7%;
+    gap: 2rem;
+  }
+  
+  .footer-left {
+    flex: 1 1 300px;
+  }
+  
+  .footer-left p {
+    line-height: 1.5;
+    margin: 0.5rem 0 1rem 0;
+  }
+  
+  .footer-logo img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-right {
+    flex: 1 1 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .social-buttons li a i {
+    color: #B3B3B3;          
+  }
+
+  .social-buttons li a:hover i {
+    color: white;        
+  }
+  
+  .subscribe-btn {
+    background-color: #B3B3B3;
+    color: #222;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .subscribe-btn:hover {
+    background-color: #e67e00;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .site-footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-right {
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  }
+  
   
   
   
