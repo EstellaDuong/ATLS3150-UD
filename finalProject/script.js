@@ -9,3 +9,13 @@ fetch('footer.html')
           .then(data => {
             document.getElementById('footer-placeholder').innerHTML = data;
 });
+
+const scrollBtn = document.getElementById('scrollTopBtn');
+
+  window.addEventListener('scroll', () => {
+    scrollBtn.style.display = (window.scrollY > 200) ? 'block' : 'none';
+  });
+
+  scrollBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
