@@ -65,7 +65,9 @@ a.navbar-brand {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.navbar .container-fluid { padding: 0 8%; }
+.navbar .container-fluid { 
+    padding: 0 8%; 
+}
 
 .dropdown-menu {
     background-color: #333;
@@ -108,12 +110,17 @@ a.navbar-brand {
     }
     
     .dropdown-item:hover {
-        background-color: #E3E3E3;
+        background-color: #f7bc94;
         color: black;
     }
 
     .navbar-toggler {
         border: 0 !important;
+        box-shadow: none;
+    }
+
+    .navbar-toggler:hover {
+        background-color: rgba(255, 255, 255, 0);
     }
 }
 
@@ -218,11 +225,10 @@ a.navbar-brand {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.4); 
     z-index: 1;
   }
   
-  /* Center caption inside carousel with shadow */
   #introCarousel .carousel-caption {
     display: flex;
     flex-direction: column;
@@ -231,7 +237,7 @@ a.navbar-brand {
     height: 100%;
     text-align: center;
     color: #fff;
-    z-index: 2; /* above overlay */
+    z-index: 2; 
     text-shadow: 2px 2px 6px rgba(0,0,0,0.9); 
   }
   
@@ -241,7 +247,7 @@ a.navbar-brand {
     font-weight: 600;
   }
   
-  #introCarousel .carousel-caption p {
+  #introCarousel .carousel-caption h3 {
     font-size: clamp(0.9rem, 3vw, 2rem);
   }
 
@@ -348,7 +354,8 @@ a.navbar-brand {
   }
 
   section {
-    margin: 1rem 0;
+    margin-top: 5rem !important; 
+    margin-bottom: 5rem !important; 
   }
 
   section h2 {
@@ -368,4 +375,76 @@ a.navbar-brand {
     }
   }
 
+
+
+
+  .educationSect {
+    background-image: url('images/birdBg.jpg');
+    background-size: cover;
+    background-position: -120px center;
+    background-color: #ffffffd1;
+    background-blend-mode: lighten;
+  }
+
+   .collage {
+    display: flex; 
+    height: 60%; 
+   }
+ 
+ @media (min-width: 767px) {
+    .educationContainer {
+        padding-right: 0; 
+        padding-top: 0 !important; 
+        padding-bottom: 0 !important; 
+        margin-right: 0; 
+        width: 100%;
+     }
+
+    .collage {
+        padding-right: 0;
+    }
+}
+
+
+
+
+
+  .stats-section {
+    background-image: url(images/flyingBirds.jpg);
+    background-position: center -160px;
+    background-size: 160%;
+    background-repeat: no-repeat;
+    padding: 10rem clamp(0.9rem, 9vw, 14rem) !important;
+    margin: 0 !important;
+  }
+
+  .stat {
+    margin: 3rem auto;
+  }
+  
+  .stat-number {
+    color: #333;
+    font-size: 3.3rem;
+    font-weight: 700;
+  }
+  
+  .stat-line {
+    background-color: #333;
+    width: 40px;
+    height: 2px;
+    margin: 0.5rem auto 1rem;
+  }
+  
+  .stat-label {
+    color: #333;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 767px) {
+    .stats-section { 
+        background-size: cover;
+    }
+}
+  
   
