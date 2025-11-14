@@ -384,6 +384,7 @@ a.navbar-brand {
     background-position: -120px center;
     background-color: #ffffffd1;
     background-blend-mode: lighten;
+    overflow: hidden;
   }
 
    .collage {
