@@ -12,9 +12,13 @@ fetch('footer.html')
 
 const scrollBtn = document.getElementById('scrollTopBtn');
 
-  window.addEventListener('scroll', () => {
-    scrollBtn.style.display = (window.scrollY > 100) ? 'block' : 'none';
-  });
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    scrollBtn.classList.add("visible");
+  } else {
+    scrollBtn.classList.remove("visible");
+  }
+});
 
   scrollBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
