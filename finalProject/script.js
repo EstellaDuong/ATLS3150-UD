@@ -13,7 +13,7 @@ fetch('footer.html')
 const scrollBtn = document.getElementById('scrollTopBtn');
 
   window.addEventListener('scroll', () => {
-    scrollBtn.style.display = (window.scrollY > 200) ? 'block' : 'none';
+    scrollBtn.style.display = (window.scrollY > 100) ? 'block' : 'none';
   });
 
   scrollBtn.addEventListener('click', () => {
